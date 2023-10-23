@@ -1,0 +1,49 @@
+{
+  "manifest_version": 3,
+  "name": "Hello Extensions",
+  "description": "Base Level Extension",
+  "version": "1.0",
+  "action": {
+    "default_popup": "popup/index.html",
+    "default_icon": {
+        "16": "images/hi.png",
+        "32": "images/hi.png",
+        "48": "images/hi.png",
+        "128": "images/hi.png"
+    }
+  },
+  "icons": {
+    "16": "images/hi.png",
+    "48": "images/hi.png",
+    "128": "images/hi.png"
+  },
+  "permissions": ["activeTab", "scripting", "tabGroups", "storage", "alarms"],
+  "host_permissions": [
+    "https://developer.chrome.com/*"
+  ],
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Ctrl+B",
+        "mac": "Command+B"
+      }
+    }
+  },
+  "background": {
+    "service_worker": "service-worker.js",
+    "type": "module"
+  },
+  "minimum_chrome_version":"102",
+  "omnibox": {
+    "keyword": "api"
+  },
+  "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "matches": [
+        "https://www.python-spider.com/*"
+      ],
+      "run_at": "document_start"
+    }
+  ]
+}

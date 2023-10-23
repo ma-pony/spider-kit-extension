@@ -1,0 +1,18 @@
+lockfileVersion: '6.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+dependencies:
+  chrome-types:
+    specifier: ^0.1.233
+    version: registry.npmmirror.com/chrome-types@0.1.233
+
+packages:
+
+  registry.npmmirror.com/chrome-types@0.1.233:
+    resolution: {integrity: sha512-hYt3EEREyammb84b8L8tmr81viacB01/6o/Aw7fwuzFi+jPHzbGDG2+NYAkgeFg0RVW4iq7+hAo8HXc+TAr4MA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/chrome-types/-/chrome-types-0.1.233.tgz}
+    name: chrome-types
+    version: 0.1.233
+    dev: false
